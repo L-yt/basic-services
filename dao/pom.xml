@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>basic-serivces</artifactId>
+		<groupId>cn.sylen</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>dao</artifactId>
+    <packaging>jar</packaging>
+    <name>dao</name>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>cn.sylen</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+	</dependencies>
+	<build>
+        <finalName>dao</finalName>
+    </build>
+</project>
