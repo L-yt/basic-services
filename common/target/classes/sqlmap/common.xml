@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "classpath:mybatis-3-mapper.dtd">
+
+<mapper namespace="sylenorm">
+
+	<select id="COUNT_SQL" resultType="Integer" parameterType="HashMap">
+		select count(1) from (${SOURCE_SQL}) as TEMP_
+	</select>
+	<select id="ALL_TABLE" resultType="string">
+		show tables
+	</select>
+	<select id="TABLE_SCHEMA" resultType="cn.sylen.dao.mapping.TableColumn">
+		desc ${table}
+	</select>
+
+	<select id="PG_TABLE_SCHEMA" resultType="cn.sylen.dao.mapping.PgTableSchema">
+		select column_name as column from information_schema.columns where table_name = #{table}
+	</select>
+
+	<insert id="insert" useGeneratedKeys="true" keyProperty="__pid">
+		${sql}
+	</insert>
+
+	<select id="update" resultType="HashMap">
+		${sql}
+	</select>
+
+	<select id="delete" resultType="HashMap">
+		${sql}
+	</select>
+
+	<select id="select" resultType="HashMap">
+		${sql}
+	</select>
+
+	<select id="COUNT_SQL_COUNT" resultType="Integer" parameterType="HashMap">
+		select count(1) from ${SOURCE_SQL}
+	</select>
+</mapper>
