@@ -315,5 +315,6 @@
     
 	<modules>
 		<module>common</module>
-	</modules>
+    	<module>dao</module>
+  </modules>
 </project>
