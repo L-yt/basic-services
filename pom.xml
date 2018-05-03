@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>cn.sylen</groupId>
-  <artifactId>basic-serivces</artifactId>
+  <artifactId>basic-services</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   
-  <name>basic-serivces</name>
+  <name>basic-services</name>
   <properties>
         <!-- spring版本号 -->
         <spring.version>4.3.2.RELEASE</spring.version>
@@ -317,5 +317,6 @@
 		<module>common</module>
     	<module>dao</module>
     	<module>service</module>
+    	<module>web</module>
   </modules>
 </project>
