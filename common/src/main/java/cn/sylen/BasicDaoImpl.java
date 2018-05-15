@@ -176,7 +176,7 @@ public class BasicDaoImpl implements BasicDao {
 
     @Override
     public int softDelete(Object obj) {
-        return  softDelete(obj, obj.getClass());
+        return softDelete(obj, obj.getClass());
     }
 
     @Override
