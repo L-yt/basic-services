@@ -6,15 +6,4 @@
     xmlns:p="http://www.springframework.org/schema/p" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
     default-autowire="byName" default-lazy-init="true">
 
-
-    <!-- <bean id="baseShopManager" class="com.yichengpai.shop.manage.BaseShopManagerImpl"></bean>
-    <bean id="shopAuthManager" class="com.yichengpai.shop.manage.ShopAuthManagerImpl"></bean>
-    <bean id="shopCacheManager" class="com.yichengpai.shop.manage.ShopCacheManager"></bean>
-    <bean id="soucheMessageAPI" class="com.yichengpai.shop.utils.SoucheMessageAPI"></bean>
-    <bean id="securityUserManager" class="com.yichengpai.shield.manager.SecurityUserManagerImpl"></bean>
-    <bean id="areaManager" class="com.yichengpai.dic.manager.AreaManagerImpl"></bean>
-    <bean id="yichengpaiDtsService" class="com.yichengpai.dts.service.YichengpaiDtsServiceImpl"></bean> -->
-    <!--<bean id="userInfoManage" class="com.yichengpai.sso.server.manager.UserInfoManagerImpl"></bean>
-    <bean id="shieldServiceSPI" class="com.yichengpai.sso.server.spi.ShieldServiceSPIAdapter"></bean>-->
-
 </beans>
